@@ -15,8 +15,10 @@ module.exports = {
   async index(req, res) {
     const { ip } = req.query;
 
-    const values = await Sensor.find({ ip: ip });
+    const values = await Sensor.find({ ip });
 
     return res.json(values);
   }
+
+  
 };

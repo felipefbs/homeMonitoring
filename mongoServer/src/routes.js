@@ -1,10 +1,14 @@
 const express = require("express");
 const SensorController = require("./controllers/SensorController");
+const SensorsController = require("./controllers/SensorsController");
 
 const routes = express.Router();
 
-routes.post("/sensors", SensorController.store);
+routes
+  .route("/sensors")
+  .get(SensorController.index)
+  .post(SensorController.store);
 
-routes.get("/sensors", SensorController.index);
+routes.get("/", SensorsController.index);
 
 module.exports = routes;
