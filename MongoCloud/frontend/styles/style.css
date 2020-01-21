@@ -5,15 +5,22 @@
           box-sizing: border-box;
 }
 
+body {
+  background: grey;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 15vh;
+  min-height: 15vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: radial-gradient(50% 50% at 50% 50%, #19882c 0%, rgba(10, 85, 23, 0.96) 100%);
 }
 
@@ -37,11 +44,13 @@ main {
 }
 
 .sensors {
+  font-family: Oswald, Roboto;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
-  width: 25vw;
+  min-height: 70vh;
+  min-width: 60vw;
   background: #00420c;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -66,17 +75,32 @@ main {
 }
 
 .sensors h2 {
-  margin-top: 00rem;
+  position: absolute;
+  margin-top: 2rem;
   font-size: 3rem;
-  font-family: Oswald, Roboto;
   color: white;
+  top: 0;
 }
 
 .sensors a {
   font-size: 1.3rem;
-  font-family: Oswald, Roboto;
   padding: 5rem auto;
   text-decoration: underline;
   color: white;
+}
+
+@media screen and (max-width: 730px) {
+  .header {
+    max-height: 10vh;
+  }
+  .header #logo {
+    text-align: center;
+  }
+  .sensors {
+    margin: 0;
+    padding: 5rem;
+    width: 100vw;
+    height: 85vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
