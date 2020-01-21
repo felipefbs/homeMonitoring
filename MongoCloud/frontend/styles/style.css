@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(50% 50% at 50% 50%, #19882c 0%, rgba(10, 85, 23, 0.96) 100%);
+}
+
+header #logo {
+  color: white;
+  font-size: 5rem;
+  font-family: VT323, Roboto;
+  margin: 2rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sensors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  width: 25vw;
+  background: #00420c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sensors ul {
+  list-style: none;
+}
+
+.sensors ul li {
+  margin: 1rem 0;
+}
+
+.sensors h2 {
+  margin-top: 00rem;
+  font-size: 3rem;
+  font-family: Oswald, Roboto;
+  color: white;
+}
+
+.sensors a {
+  font-size: 1.3rem;
+  font-family: Oswald, Roboto;
+  padding: 5rem auto;
+  text-decoration: underline;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
